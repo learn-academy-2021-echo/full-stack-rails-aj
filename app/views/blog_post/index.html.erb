@@ -1,0 +1,9 @@
+<h1>Blogs index</h1>
+
+<ul>
+  <% @blogposts.each do |blogpost|%>
+  <li>
+    <%= link_to blogpost.title, blogpost_path(blogpost)%>
+  </li>
+  <% end%>
+</ul>
